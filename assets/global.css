@@ -59,13 +59,7 @@
 
 }
 
-
-body {
-  background-color: var(--brand-dark);
-
-  h1 {
-    font: var(--heading-sm);
-  }
-
+img {
+  max-width: 100%;
 }
 
