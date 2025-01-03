@@ -1,3 +1,4 @@
+
 h1 {
   font: var(--heading-md);
   color: var(--text-heading);
@@ -56,4 +57,14 @@ label {
 display: block;
 color: var(--text-body);
 font: var(--body-sm-reg);
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
 }
