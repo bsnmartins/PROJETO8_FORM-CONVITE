@@ -9,7 +9,6 @@
   justify-content: center;
   
   
-  /* height: 2.15rem; */
   
   & input,
   & input:focus,
@@ -58,4 +57,96 @@ top: .3rem;
 }
 }
 
+.color-picker {
+  width: 100%;
+}
+.colors {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked + .color-circle {
+    outline: 2px solid var(--brand-light);
+    outline-offset: 0.25rem;
+    filter: brightness(1.2); 
+    transition: outline 0.3s ease, filter 0.3s ease;
+    gap: 0.5rem;
+  }
+
+
+
+}
+
+.color-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  outline: .375rem solid var(--shape-button);
+  cursor: pointer;
+
+  &:hover {
+  filter: brightness(1.1);
+}
+  &.brand-light {
+    background-color: var(--brand-light);
+  }
+
+  &.navy {
+    background-color: var(--navy);
+  
+  }
+
+  &.purple {
+    background-color: var(--purple);
+   
+  }
+  
+  &.fuschia {
+    background-color: var(--fuschia);
+   
+  }
+
+  &.pink {
+    background-color: var(--pink);
+   
+  }
+
+  &.danger {
+    background-color: var(--danger);
+  
+  }
+
+  &.orange {
+    background-color: var(--orange);
+  
+  }
+
+  &.yellow {
+    background-color: var(--yellow);
+  
+  }
+
+  &.lime {
+    background-color: var(--lime);
+  
+  }
+
+  &.green {
+    background-color: var(--green);
+   
+  }
+
+  &.cyan {
+    background-color: var(--cyan);
+  
+  }
+
+}
 

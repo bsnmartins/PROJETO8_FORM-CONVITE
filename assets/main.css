@@ -68,3 +68,43 @@ font: var(--body-sm-reg);
 .flex-1 {
   flex: 1;
 }
+
+
+.textarea-wrapper {
+  width: 100%;
+  
+  textarea {
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--input-base);
+    outline: 1px solid var(--input-stroke);
+    border: 0;
+
+    padding: 1rem;
+    font: var(--body-sm-reg);
+    color: var(--input-placeholder);
+  }
+
+  
+}
+
+
+.pattern {
+  margin-top: 3rem;
+  display: flex;
+
+}
+.pattern-icon {
+  display: flex;
+
+  &::before {
+    content: "";
+    background-image: url(./icons/paintbrush-vertical.svg);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: cover;
+    margin-right: 0.75rem;
+   
+     }
+
+}

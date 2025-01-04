@@ -20,7 +20,6 @@
         <p class="logo-title">Festivite</p>
         <p>Crie um convite digital para o seu evento</p>
       </div>
-      <!-- <img src="./assets/imgs/Background.png" alt=""> -->
     </div>
   </aside>
     
@@ -41,18 +40,18 @@
 
         <div class="input-wrapper flex-1">
           <label for="start">Início</label>
-          <input type="date time" id="start" placeholder="DD/MM/AAAA, --:--">
+          <input type="datetime-local" id="start">
+          
         </div>
 
         <div class="input-wrapper flex-1">
           <label for="end">Fim</label>
-          <input type="date time" id="end" placeholder="DD/MM/AAAA, --:--">
+          <input type="datetime-local" id="end">
         </div>
         
         </div>
 
-        
-          <div class="flex">
+        <div class="flex">
             <div class="input-wrapper flex-1">
               <label for="presential">Tipo</label>
               <div class="radio-wrapper">
@@ -76,9 +75,80 @@
               <input type="text" id="place" placeholder="Link ou endereço">
             </div>
             
-          </div>
+        </div>
           
-        
+          <div class="textarea-wrapper">
+            <label for="description">Descrição</label>
+            <textarea name="description" id="description" rows="5" cols="30" placeholder="Escreva sobre os detalhes do evento"></textarea>
+          </div>
+    
+      </fieldset>
+     
+      <fieldset class="pattern">
+        <legend class="pattern-icon">Personalização</legend>
+
+        <div class="color-picker">
+        <label for="color-title">Cor principal</label>
+
+            <div class="colors">
+
+                         
+              <div>
+                <input type="radio" name="color" value="brand-light" id="brand-light">
+                <label for="brand-light" class="color-circle brand-light" ></label>
+              </div>
+
+              <div>
+                <input type="radio" name="color" value="navy" id="navy">
+                <label for="navy" class="color-circle navy"></label>
+              </div>
+              <div>
+                <input type="radio" name="color" value="purple" id="purple">
+                <label for="purple" class="color-circle purple"></label>
+              </div>
+              <div>
+                <input type="radio" name="color" value="fuschia" id="fuschia">
+                <label for="fuschia" class="color-circle fuschia"></label>
+              </div>
+              <div>
+                <input type="radio" name="color" value="pink" id="pink">
+                <label for="pink" class="color-circle pink"></label>
+              </div>
+              <div>
+                <input type="radio" name="color" value="danger" id="danger">
+                <label for="danger" class="color-circle danger"></label>
+              </div>
+              <div>
+                <input type="radio" name="color" value="orange" id="orange">
+                <label for="orange" class="color-circle orange"></label>
+              </div>
+              <div>
+                <input type="radio" name="color" value="yellow" id="yellow">
+                <label for="yellow" class="color-circle yellow"></label>
+              </div>
+              <div>
+                <input type="radio" name="color" value="lime" id="lime">
+                <label for="lime" class="color-circle lime"></label>
+              </div>
+              <div>
+                <input type="radio" name="color" value="green" id="green">
+                <label for="green" class="color-circle green"></label>
+              </div>
+              <div>
+                <input type="radio" name="color" value="cyan" id="cyan">
+                <label for="cyan" class="color-circle cyan"></label>
+              </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
       </fieldset>
         
 
