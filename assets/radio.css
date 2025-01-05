@@ -1,3 +1,15 @@
+.pattern {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.color-title {
+padding: 0;
+}
+
+
 .radio-inner {
   border-radius: .35rem ;
   position: relative;
@@ -32,7 +44,6 @@
 
   background-color: var(--input-base);
   outline: 1px solid var(--input-stroke);
-  /* gap: 0.24rem; */
   border-radius: .75rem ;
   align-items: center;
   height: 3.13rem;
@@ -59,7 +70,10 @@ top: .3rem;
 
 .color-picker {
   width: 100%;
-}
+  display: flex;
+  
+  }
+
 .colors {
   display: flex;
   margin-top: 1rem;
@@ -79,9 +93,6 @@ top: .3rem;
     transition: outline 0.3s ease, filter 0.3s ease;
     gap: 0.5rem;
   }
-
-
-
 }
 
 .color-circle {
@@ -149,4 +160,66 @@ top: .3rem;
   }
 
 }
+.party-theme { 
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color: var(--shape-button);
+  outline: 1px solid var(--input-stroke);
+  min-width: 134px;
+  flex: 1;
+  border-radius: 8px;
+  cursor: pointer;
+  align-items: center;
+  transition: filter 0.3s ease, transform 0.3s ease;
+
+  position: relative;
+
+
+  &:has(:checked) {
+  outline: 2px solid var(--brand-light);
+  transform: scale(1.05);
+  }
+
+  & img {
+    align-content: center;
+    min-width: 95%;
+    height: auto;
+    margin-top: 5px;
+    object-fit: contain;
+    position: relative;
+  }
+  
+  label {
+    position: relative;
+    top: 1rem;
+  }
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+  
+  input[type="radio"] {
+    display: none;
+    inset: 0;
+    position: absolute;
+  }
+}
+
+.event-theme {
+  margin-top: 1.75rem;
+  display: block;
+
+  label {
+    margin-bottom: 1rem;
+  }
+}
+
+.theme-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+ }
+ 
 
