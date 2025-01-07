@@ -15,6 +15,10 @@ input {
 
   font: var( --body-md-reg);
   color: var(--input-placeholder);
+
+  &:hover {
+    filter: brightness(1.1);
+  }
   
 }
 
@@ -108,3 +112,37 @@ font: var(--body-sm-reg);
      }
 
 }
+
+
+
+
+.title-contact::before {
+  content: "";
+  background-image: url(./icons/contact.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  background-size: cover;
+   }
+
+
+   .contact {
+    margin-top: 3.150rem;
+   }
+
+   .title-contact {
+    display: flex;
+    gap: 0.75rem;
+   }
+
+   .error {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+
+    span {
+      font: var(--body-sm-reg);
+      color: var(--danger);
+    }
+
+   }

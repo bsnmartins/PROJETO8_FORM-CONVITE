@@ -86,7 +86,7 @@
      
       <fieldset class="pattern">
         <legend class="pattern-icon">Personalização</legend>
-
+        <div>
         <label for="color-title" class="color-title">Cor principal</label>
         <div class="color-picker">
           <div class="colors">
@@ -216,11 +216,8 @@
               <label for="outro">Outro</label>
             </div>
 
-
           </div>
-        
         </div>
-
         <div class="style-and-picture flex">
           
           <div class="checkbox">
@@ -228,31 +225,56 @@
           <label class="style">
             <input type="checkbox" value="escuro" id="switch" name="switch">
             <span class="slider"></span>
-            <span class="switch-label">Escuro</span>
+            <span class="switch-label"></span>
+          </label>
           </div>
           
           
           <div class="picture-upload">
             <label for="picture">Foto da Capa</label>
-            <input type="file" id="picture">
+            <div class="dropzone">
+            <input type="file" id="picture" name="picture" required>
+            <p>Selecionar</p>
+            <span class="filename">Nenhum arquivo Selecionado</span>
+          </div>
           </div>
           
         </div>
 
-
+        <fieldset class="contact">
+          <legend class="title-contact">Dados para contato</legend>
+        
+          <div class="input-wrapper">
+            <label for="title">Nome</label>
+            <input type="text" id="title" placeholder="Nome completo">
+            <div class="error">
+              <img src="./assets/icons/alert-circle.svg" alt="ícone de alerta">
+              <span>Campo obrigatório</span>
+            </div>
+          </div>
+  
+          <div class="flex">
+  
+          <div class="input-wrapper flex-1">
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail" placeholder="exemplo@email.com">
+            
+          </div>
+  
+          <div class="input-wrapper flex-1">
+            <label for="phone">Telefone</label>
+            <input type="tel" id="phone" placeholder="(99) 99999-9999">
+          </div>
           
-    
-    
+          </div>
+
+        </fieldset>
 
 
-
-
+      </div>
 
       </fieldset>
         
-
-
-
       </form>
     </div>
   </main>
