@@ -16,9 +16,9 @@ textarea:focus {
 }
 
 hr {
+  border: 1px solid var(--input-stroke);
   margin-top: 3rem;
   margin-bottom: 2.5rem;
-  color: var(--input-stroke);
 }
 
 
