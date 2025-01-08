@@ -246,7 +246,7 @@
         
           <div class="input-wrapper">
             <label for="title">Nome</label>
-            <input type="text" id="title" placeholder="Nome completo">
+            <input type="text" id="title" placeholder="Nome completo" required>
             <div class="error">
               <img src="./assets/icons/alert-circle.svg" alt="ícone de alerta">
               <span>Campo obrigatório</span>
@@ -274,6 +274,33 @@
       </div>
 
       </fieldset>
+      <hr>
+
+      <div class="checkbox-wrapper">
+      <div class="final-check">
+        <div class="checkbox-img"></div>
+        <input type="checkbox" name="read" id="read" required>
+        <label>Li e concordo com os <span class="mark"> Termos e Condições</span> e com a <span class="mark">Política de Privacidade</span></label>
+      </div>
+
+      <div class="final-check">
+        <div class="checkbox-img"></div>
+        <input type="checkbox" name="read" id="read">
+        <label>Aceito receber atualizações e promoções por e-mail</label>
+      </div>
+
+      <div class="final-check">
+        <div class="checkbox-img"></div>
+        <input type="checkbox" name="read" id="read">
+        <label>Aceito receber atualizações e promoções por SMS</label>
+      </div>
+    </div>
+
+    <div class="final-button">
+      <button class="submit-form" type="submit"><img src="./assets/icons/ticket.svg"> 
+        Gerar convite</button>
+      
+    </div>
         
       </form>
     </div>

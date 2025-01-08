@@ -14,3 +14,11 @@ textarea:focus {
     filter: brightness(1.1);
   }
 }
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  color: var(--input-stroke);
+}
+
+

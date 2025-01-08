@@ -19,6 +19,12 @@ input {
   &:hover {
     filter: brightness(1.1);
   }
+
+  &:invalid {
+    outline: 1px solid var(--danger);
+
+
+  }
   
 }
 
@@ -146,3 +152,41 @@ font: var(--body-sm-reg);
     }
 
    }
+
+.final-button {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: end;
+  
+  button {
+    all: unset;
+    font: var(--body-md-sem);
+    color: var(--text-heading);
+    background-color: var(--brand-dark);
+    border-radius: 8px;
+    height: 48px;
+    width: 177px;
+
+    cursor: pointer;
+
+    text-align: center;
+  }
+
+  .submit-form {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
